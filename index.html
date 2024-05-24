@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+      <link rel="stylesheet" href="style.css">
+
+      <title>Login form</title>
+   </head>
+   <body>
+      
+      <div class="login">
+
+         <form action="" class="login__form">
+            <h1 class="login__title">Register</h1>
+
+            <div class="login__inputs">
+               <div class="login__box">
+                  <input id="email" type="email" placeholder="Email ID" required class="login__input">
+               </div>
+
+               <div class="login__box">
+                  <input id="password" type="text" placeholder="Password" required class="login__input">
+                   <p id="error"></p>
+               </div>
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-box">
+                  <input type="checkbox" class="login__check-input" id="user-check">
+                  <label for="user-check" class="login__check-label">Remember me</label>
+               </div>
+               <select name="" id="gender">
+                <option value="">Select the gender</option>
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+               </select>
+               <input type="radio" name="gender" value="men"> Men
+               <input type="radio" name="gender" value="women"> women
+
+            </div>
+
+            <button type="submit" class="login__button">Login</button>
+
+            <div class="login__register">
+               Don't have an account? <a href="#">Register</a>
+            </div>
+         </form>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
